@@ -1,7 +1,7 @@
 import pyttsx3,PyPDF2
 from PyPDF2 import PdfReader
 
-pdfreader = PdfReader("book.pdf") #You can also place "input("What is the path of the file with name.pdf ") in the name place so it would take file full path
+pdfreader = PdfReader("book.pdf") #You can also place "input("What is the path of the file with name.pdf ") in the "book.pdf" place so it would take file full path
 page_num = len(pdfreader.pages)
 engine = pyttsx3.init()
 text = ""
