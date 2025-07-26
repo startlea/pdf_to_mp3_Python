@@ -11,6 +11,12 @@ class PDFReaderGUI:
         self.master = master  # Przypisanie okna głównego
         master.title("PDF Reader")  # Ustawienie tytułu okna
 
+         # Ustawienie początkowego rozmiaru okna
+        master.geometry("400x250")  # Szerokość x Wysokość
+
+        # Minimalny rozmiar okna
+        master.minsize(300, 200)
+        
         # Etykieta informująca użytkownika o wyborze pliku
         self.label = tk.Label(master, text="Wybierz plik PDF:")
         self.label.pack(pady=10)  # Dodanie etykiety do okna z paddingiem w osi Y
